@@ -14,6 +14,8 @@ const { SEKRET_KEY } = require('../constants');
 
 const SALT_ROUNDS = 10;
 
+const { NODE_ENV, JWT_SECRET } = process.env;
+
 const BadAuthError = require('../errors/bad-auth-err');
 const BadRequestError = require('../errors/bad-request-err');
 const NotFoundError = require('../errors/not-found-err');
@@ -25,7 +27,7 @@ module.exports.login = (req, res, next) => {
 
   return User.findUserByCredentials(email, password)
     .then((user) => {
-      const token = jwt.sign({ _id: user._id }, SEKRET_KEY, { expiresIn: '7d' });
+      const token = jwt.sign({ _id: user._id }, NODE_ENV === 'production' ? JWT_SECRET : SEKRET_KEY, { expiresIn: '7d' });
       res.send({ token });
     })
     .catch(() => {
