@@ -5,6 +5,7 @@ const BodyParser = require('body-parser');
 const { errors } = require('celebrate');
 // const auth = require('./middlewares/auth'); // авторизация
 const cenralErrors = require('./middlewares/central-err');
+const { requestLogger, errorLogger } = require('./middlewares/logger');
 
 const app = express();
 const routes = require('./routes/routes');
@@ -27,9 +28,16 @@ async function main() {
 app.use(BodyParser.json()); // подключили миддлвару кот достает значения из тела запроса
 // app.use(auth); // авторизация
 
+app.use(requestLogger); // подключаем логгер запросов
+// за ним идут все обработчики роутов
+
 // подключаем роуты и всё остальное...
 app.use(express.json());
 app.use(routes);
+
+app.use(errorLogger); // ошибки логов
+// errorLogger нужно подключить после обработчиков роутов и
+// до обработчиков ошибок
 
 // централизованная обработка ошибок
 app.use(errors());
