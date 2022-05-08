@@ -1,0 +1,8 @@
+.cards { 
+	padding: 0 20px;
+}
+@media screen and (min-width: 930px){
+    .cards {
+        padding: 0;
+    } 
+}

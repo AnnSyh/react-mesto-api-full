@@ -1,0 +1,18 @@
+.cards__pic {
+    width: 100%;
+    max-height: 439px;
+    position: relative;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.cards__pic:hover {
+    opacity: 0.8;
+}
+
+@media screen and (min-width: 481px) {
+    .cards__pic {
+        width: 100%;
+        max-height: 282px;
+        height: 100%;
+    }
+}

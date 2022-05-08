@@ -1,0 +1,19 @@
+.profile__btn {
+    border: 1px solid #fff;
+    background: transparent;
+    color: #fff;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+}
+
+@media screen and (min-width: 480px) {
+    .profile__btn {
+        width: 150px;
+        max-width: 150px;
+    }
+}

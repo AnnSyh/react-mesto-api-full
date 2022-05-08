@@ -1,0 +1,27 @@
+.profile__pic {
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .profile__pic {
+    margin-right: 30px;
+  }
+}
+
+
+
+.btn-avatar-edit button {
+  opacity: 0;
+}
+
+.btn-avatar-edit:hover {
+  /* background-image: url('../../../images/pix.png'); */
+  background-repeat: repeat;
+  cursor: pointer;
+}
+
+.btn-avatar-edit:hover button {
+  cursor: pointer;
+  opacity: 1;
+
+}

@@ -1,0 +1,7 @@
+.profile__btn_avatar-edit {
+  position: absolute;
+  margin: 0;
+  top: calc(50% - 10px);
+  left: calc(50% - 10px);
+  border: none;
+}

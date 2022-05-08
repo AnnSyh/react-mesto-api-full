@@ -1,0 +1,20 @@
+.profile__btn_user-add {
+    position: relative;
+    border-radius: 2px;
+}
+.profile__btn_user-add::after,
+.profile__btn_user-add::before {
+    content: "";
+    width: 23px;
+    height: 3px;
+    background: #fff;
+
+    position: absolute;
+}
+.profile__btn_user-add::after {
+    transform: rotate(90deg);
+}
+
+.profile__btn_user-add::before {
+    transform: rotate(180deg);
+}

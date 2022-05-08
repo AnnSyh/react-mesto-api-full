@@ -1,0 +1,16 @@
+.cards__text {
+    padding: 26px 19px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 240px;
+
+    margin-top: auto;
+}
+
+@media screen and (min-width:480px) {
+    .cards__text {
+        padding: 24px;
+        max-width: 100%;
+    }
+}

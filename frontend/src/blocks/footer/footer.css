@@ -1,0 +1,26 @@
+.footer {
+    margin-top: 3rem;
+    margin-bottom: 20px;
+    color: #fff;
+    padding: 0 20px;
+}
+@media screen and (min-width: 321px){
+    .footer {
+        margin-top: 76px;
+    }
+}
+@media screen and (min-width: 768px){
+    .footer {
+        margin-top: 86px;
+    }
+}
+@media screen and (min-width: 930px) {
+    .footer {
+        padding: 0;
+    }
+ }
+@media screen and (min-width: 1024px){
+    .footer {
+        margin-top: 70px;
+    }
+}

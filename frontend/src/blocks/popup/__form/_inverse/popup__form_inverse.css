@@ -1,0 +1,20 @@
+.popup__form_inverse {
+  background-color: transparent;
+  max-width: 358px;
+  margin: 0 auto;
+  
+}
+
+.popup__form_inverse .page-title {
+  color:  #fff;
+}
+
+.popup__form_inverse .popup__btn {
+  background-color: #fff;
+  color: #000;
+}
+
+.popup__form_inverse .popup__input {
+  background-color: transparent;
+  color:  #fff;
+}

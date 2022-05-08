@@ -1,0 +1,20 @@
+.cards__heart {
+    width: 22px;
+    min-width: 22px;
+    height: 19px;
+    cursor: pointer;
+    background-image: url('../../../images/heart.svg');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    background-color: transparent;
+    border: none;
+}
+
+.cards__heart:hover {
+    opacity: 0.5;
+}
+.cards__heart:active {
+    opacity: 1;
+	background-image: url('../../../images/heart-active.svg');
+}

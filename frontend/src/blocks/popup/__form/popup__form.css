@@ -1,0 +1,23 @@
+.popup__form {
+	display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    margin: 32px 0;
+    position: relative;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+
+@media screen and (min-width:480px){
+    .popup__form {
+        padding: 30px 35px;
+        margin: 43px;
+    }
+}
+@media screen and (min-width:768px){
+    .popup__form {
+        min-width: 431px;
+    }
+}
