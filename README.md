@@ -15,12 +15,12 @@
 - операции с карточками и пользователями. 
 Бэкенд расположите в директории `backend/`, 
 а фронтенд - в `frontend/`. 
-  
+<!--  
 ## Ссылка на сайт , размещенный на Яндекс.Облаке.
 - <a href="http://mesto.frontend.annsyh.nomoredomains.work/">Ссылка на frontend</a>
 - <a href="http://mesto.backend.annsyh.nomoredomains.work/">Ссылка на backend</a> 
 - публичный IP адрес  51.250.85.213
-
+-->
 
 ## Технологии
 - HTML
